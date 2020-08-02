@@ -1,4 +1,6 @@
 # Simple Website Checker
+[![<romulorosa>](https://circleci.com/gh/romulorosa/simple-webchecker.svg?style=svg)](https://app.circleci.com/pipelines/github/romulorosa/simple-webchecker?branch=master)
+
 
 ## About
 
