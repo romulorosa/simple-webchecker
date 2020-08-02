@@ -20,7 +20,7 @@ The second one is the **writer**, which lies on the other side of the process an
 Before running both checker and writer, make sure you have a Postgres database properly setup and a Kafka cluster running as well.
 
 ### Settings
-The next step would be filling out your database and kafka configuration whithin the file **settings.py** `(webchecker/settings.py)` which can also be done using environment variables. 
+The next step would be filling out your database and kafka configuration within the file **settings.py** `(webchecker/settings.py)` which can also be done using environment variables. 
 
 Checkout both **DATABASE_CONF** and **KAFKA_CONF** located at **settings.py** to have a better picture about each information needed.
 
