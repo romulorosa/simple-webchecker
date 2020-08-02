@@ -84,6 +84,10 @@ For instance, one good addition would be make usage of `async.io` in order to fe
 
 A second one which can also be chained with the previous one would be setting up celery for dispatch async tasks which will be responsible to fetch the websites. This will help on making sure that we have one task been triggered without exceeding the time aimed time interval.
 
+The tests can also be improved, specially integration tests which tests the whole features end to end.
+
+Furthermore, it would be nice to write some docker-compose which definitly would help newcomers to this project.
+
 
 ## Attributions
 
