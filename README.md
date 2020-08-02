@@ -22,7 +22,7 @@ The next step would be filling out your database and kafka configuration whithin
 
 Checkout both **DATABASE_CONF** and **KAFKA_CONF** located at **settings.py** to have a better picture about each information needed.
 
-```
+```python
 DATABASE = DATABASE_CONF(
     config('DB_HOST', default=''),
     config('DB_PORT', default=''),
@@ -42,7 +42,7 @@ KAFKA = KAKFA_CONF(
 
 ### Database schema migration
 Once you are ready with your database and configuration the database schema can be created making usage of CLI command just as follows.
-```
+```bash
 python manage.py setupdb
 ```
 
@@ -50,14 +50,14 @@ python manage.py setupdb
 Now that we have everything setup it is time to bring up the writer and checker. To do this, once more, the CLI option will be used. Check it below.
 
 #### Writer
-```
+```bash
 python manage.py writer
 ```
 This command will spin up a process with a Kafka consumer which is also responsible for persisting the information inside the database.
 
 #### Checker
 The checker contains some extra options which can be really helpful for tweak a bit the default parameters. Check the options available below. 
-```
+```bash
 $ python manage.py checker -h
 usage: manage.py checker [-h] [-s SITES] [-i INTERVAL] [-r REGEX]
 
@@ -71,7 +71,7 @@ optional arguments:
 Please note that the `-s` option can be used multiple time in order to specify more the one website to be checked.
 
 > **Example**
-```
+```bash
 python manage.py checker -s https://www.york.ac.uk/teaching/cws/wws/webpage2.html -s https://www.york.ac.uk/teaching/cws/wws/webpage1.html -i 5
 ```
 
